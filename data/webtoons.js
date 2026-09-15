@@ -4,6 +4,8 @@ const webtoons = [
   { id: '2', title: 'Neon Alley', genre: 'Sci-Fi', color: '#E07A5F', synopsis: 'In a city of endless night, a hacker uncovers a conspiracy.' },
   { id: '3', title: 'Paper Hearts', genre: 'Romance', color: '#81B29A', synopsis: 'Two rival artists fall for each other one sketch at a time.' },
   { id: '4', title: 'Iron Garden', genre: 'Action', color: '#F2CC8F', synopsis: 'A retired soldier protects a village from an old enemy.' },
+  { id: '5', title: 'Quiet Static', genre: 'Drama', color: '#9381FF', synopsis: 'A radio DJ reconnects with a voice from her past.' },
+  { id: '6', title: 'Salt & Ash', genre: 'Adventure', color: '#5E6472', synopsis: 'Shipwrecked siblings navigate a world of floating islands.' },
 ];
 
 export default webtoons;

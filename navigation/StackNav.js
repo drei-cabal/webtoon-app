@@ -3,6 +3,7 @@ import { StyleSheet } from 'react-native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import HomeScreen from '../screens/HomeScreen';
 import DetailScreen from '../screens/DetailScreen';
+import ReaderScreen from '../screens/ReaderScreen';
 import DrawerMenuButton from './DrawerMenuButton';
 
 const Stack = createNativeStackNavigator();
@@ -22,10 +23,16 @@ export default function StackNav() {
         options={{ title: 'Webtoons', headerLeft: () => <DrawerMenuButton /> }}
       />
       <Stack.Screen name="Detail" component={DetailScreen} options={{ title: 'Details' }} />
+      <Stack.Screen
+        name="Reader"
+        component={ReaderScreen}
+        options={{ headerStyle: styles.readerHeader, title: '' }}
+      />
     </Stack.Navigator>
   );
 }
 
 const styles = StyleSheet.create({
   header: { backgroundColor: '#4A90D9' },
+  readerHeader: { backgroundColor: '#111' },
 });
